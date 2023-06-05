@@ -13,7 +13,7 @@ body {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', s
 }
 
 .container {
-	max-width: min(1290px, 96%);
+	max-width: min(1290px ,96%);
 	margin: 0 auto;
 }
 
@@ -117,7 +117,7 @@ body {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', s
 	font-size: 60px;
 	color: #202020;
 	font-weight: 500;
-	line-height: 60px;
+	line-height: 55px;
 	font-family: 'Saira', sans-serif;
 }
 
@@ -128,7 +128,7 @@ body {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', s
 }
 
 .banner-btn {
-	font-size: 0;
+	font-size: 0;margin-top: 10px;
 
 }
 
@@ -141,13 +141,12 @@ body {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', s
 .banner-btn .bannerbtn2 {
 	background-color: #ffad30;
 	color: #202020;
-
 }
-
 .banner-btn a {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 15px;
+	padding: 12px 25px;
+	margin-top: 20px;
 	font-size: 18px;
 	font-weight: 500;
 	border-radius: 50px;
@@ -167,7 +166,6 @@ body {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', s
 	background-color: #7691da;
 	color: #fff;
 }
-
 .banner-caption h3,
 span.typed-cursor {
 	font-size: 50px;
@@ -175,17 +173,15 @@ span.typed-cursor {
 	text-align: center;
 	display: inline-block;
 	font-weight: 500;
-	line-height: 50px;
-	margin: 0 0 20px 0;
+	line-height: 24px;
+	margin: 0 0 30px 0;
 	font-family: 'Saira', sans-serif;
 	letter-spacing: 2px;
 }
-
 /* about-sec starts */
 .about-sec {
 	margin: 40px 0;
 }
-
 .about-sec .container {
 	background: #fff5f5;
 	padding: 70px 0;
@@ -193,12 +189,10 @@ span.typed-cursor {
 	margin: 0 auto;
 	text-align: center;
 }
-
 .content-box {
 	width: 1060px;
 	margin: 0 auto;
 }
-
 .content-box h2 {
 	font-size: 30px;
 	font-weight: 500;
@@ -206,18 +200,15 @@ span.typed-cursor {
 	text-align: center;
 	font-family: 'Saira', sans-serif;
 }
-
 .content-box h2 span {
 	display: inline;
 	color: #e38557
 }
-
 .content-box .mailbox {
 	width: 100%;
 	position: relative;
 	text-align: right;
 }
-
 .content-box .mailbox::before {
 	content: '';
 	position: absolute;
@@ -227,13 +218,11 @@ span.typed-cursor {
 	height: 2px;
 	background: #7691da;
 }
-
 .content-box .mailbox span {
 	position: relative;
 	padding-left: 25px;
 	background: #fff5f5;
 }
-
 .mailbox span a {
 	font-size: 18px;
 	font-weight: 500;
@@ -269,8 +258,7 @@ span.typed-cursor {
 .owl-carousel .owl-item img {
 	display: block;
 	width: 100%;
-	object-fit: cover;
-	aspect-ratio: 3/2;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .owl-nav button .owl-prev {
@@ -305,7 +293,7 @@ span.typed-cursor {
 }
 
 .big-project-section .owl-carousel .owl-nav button.owl-prev {
-	left: -29PX;
+	right: -29PX;
 }
 
 .owl-nav button .owl-next span {
@@ -348,7 +336,7 @@ span.typed-cursor {
 }
 
 .project-sec .container {
-	padding: 100px 0;
+	padding: 80px 0;
 	background: #f2f6f7;
 	border-radius: 30px;
 	position: relative;
@@ -365,6 +353,7 @@ span.typed-cursor {
 	font-weight: 500;
 	line-height: normal;
 	text-align: center;
+	margin: 0;
 	font-family: 'Saira', sans-serif;
 }
 
@@ -373,7 +362,7 @@ span.typed-cursor {
 	font-weight: 400;
 	line-height: 30px;
 	letter-spacing: 0.4px;
-	margin: 35px 0;
+	margin: 15px 0;
 }
 
 .icon-box .htmlimg {
@@ -432,7 +421,7 @@ span.typed-cursor {
 	gap: 30px;
     list-style: none;
 }
-.footer-nav ul li a{color: #202020;}
+.footer-nav ul li a{color: #202020;font-size: 22px;font-weight: 600;}
 
 .social-icon {
 	width: 23%;
@@ -486,7 +475,7 @@ a:hover {
 }
 
 .copyright p {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 600;
 }
 @media only screen and (max-width:1200px){
@@ -520,6 +509,14 @@ a:hover {
 	.project-content p{
 		margin: 25px 0;
 	}
+}
+@media only screen and (max-width:1024px){
+	.project-content{width: 74%;}
+	.icon-box .photoshopimg { left: 225px;}
+	.project-content p { margin: 20px 0; }
+	.icon-box img { max-width: 90%; }
+	.banner-btn a{    padding: 12px 40px;font-size: 22px;}
+	.footer-nav ul li a{font-size: 26px;}
 }
 
 @media only screen and (max-width:1000px) {
@@ -620,8 +617,8 @@ a:hover {
 .rightsec {display: none;}
 .contact {display: none;}
 .banner-section {text-align: center; padding: 50px 0;}
-.banner-caption h2 {font-size: 50px;line-height: 50px;margin: 0;}
-.banner-caption h2 span { margin-top: 15px; font-size: 45px;}
+.banner-caption h2 {font-size: 45px;line-height: 50px;margin: 0;}
+.banner-caption h2 span { font-size: 35px;}
 	.banner-btn a {
 		min-height: 12px;
         font-size: 18px;
@@ -636,7 +633,9 @@ a:hover {
 }
 	.banner-caption h3,
 	span.typed-cursor {
-		font-size: 30px;
+		font-size: 40px;
+		line-height: 50px;
+		margin: 0;
 	}
 
 	.banner-caption,
@@ -677,17 +676,19 @@ a:hover {
 	.big-project-section h3 {
 		font-size: 30px;
 	}
-
+	.project-sec{margin: 30px 0;}
+    .project-content{width: 90%;}
 	.project-content h4 {
 		font-size: 30px;
 	}
 
 	.project-content p {
 		font-size: 20px;
+		margin: 15px 0;
 	}
 
 	.icon-box img {
-		width: 80%;
+		width: 55%;
 	}
 
 	.icon-box .bootstrapimg {
@@ -724,13 +725,14 @@ a:hover {
 		padding: 0;
 		display: block;
 	}
-
+	.footer-nav ul{gap: 25px; margin-top: 0;margin-bottom: 25px;}
 	.social-icon ul li {
 		font-size: 0px;
 	}
 	.copyright p{
 		font-size: 18px;
 	}
+	.footer-sec{padding: 30px 0; margin: 0;}
 
 	#menu {
 		display: block;
@@ -783,7 +785,7 @@ a:hover {
 		right: 0;
 		width: 50%;
 		margin: 0;
-		font-size: 20px;
+		font-size: 25px;
 		z-index: -100;
 		display: flex;
 		flex-direction: column;
@@ -791,11 +793,31 @@ a:hover {
 		align-items: center;
 		gap: 20px 0;
 	}
+}
+@media only screen and (max-width:736px){
 	
-	.copyright p{font-size: 15px;}
+	.icon-box .htmlimg {
+        top: 20px;
+        left: 10px;
+	}
+	.icon-box .cssimg {
+        top: 20px;
+        right: 10px;
+	}
+	.icon-box .photoshopimg {
+        bottom: 5px;
+	}
+}
+@media only screen and (max-width:600px){
+	.project-content {
+		width: 95%;
+	}
+	.project-sec .container {
+		padding: 85px 0;
+	}
 }
 
-@media only screen and (max-width:490px) {
+@media only screen and (max-width:480px) {
 	.contact {
 		display: none;
 	}
@@ -827,7 +849,6 @@ a:hover {
 		margin-top: 40px;
 
 	}
-
 	.social-icon ul {
 		width: 90%;
 		font-size: 0;
@@ -837,7 +858,6 @@ a:hover {
 	.icon-box img {
 		width: 45%;
 	}
-
 	 .footer-sec .footer-nav ul {
 		display: flex;
 		gap: 20px;
@@ -847,28 +867,23 @@ a:hover {
 	.footer-nav ul li a {
 		font-size: 20px;
 	}
-
 	.big-project-section .owl-carousel .owl-nav button.owl-prev {
 		left: -7PX;
 	}
-
 	.big-project-section .owl-carousel .owl-nav button.owl-next {
 		right: -7PX;
 	}
-
 	.project-content h4 {
 		margin: 0;
+		font-size: 24px;
 	}
-
 	.project-content p {
 		margin: 10px 0;
 	}
-
 	.banner-btn a {
-		padding: 8px;
-		font-size: 12px;
+		padding: 12px 30px;
+		font-size: 16px;
 	}
-
 	.mailbox span a {
 		font-size: 13px;
 		padding: 0;
@@ -892,4 +907,15 @@ a:hover {
 	#menu {
 		display: block;
 	}
+}
+@media only screen and (max-width:375px){.footer-sec .footer-nav ul{gap: 15px;}
+.footer-nav ul li a {font-size: 18px;}}
+@media only screen and (max-width:320px){
+	.banner-btn .bannerbtn1{margin-right: 0;}
+	.content-box h2 {font-size: 18px;}
+	.icon-box .photoshopimg {bottom: 5px;left: 106px;}
+	.icon-box .javascriptimg {bottom: 5px;}
+	.footer-sec .footer-nav ul{gap: 15px;}
+	.footer-nav ul li a {font-size: 18px;}
+	.copyright p {font-size: 13px;}
 }
