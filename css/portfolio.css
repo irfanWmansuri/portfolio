@@ -1,3 +1,4 @@
+
 body {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', sans-serif;
 }
 
@@ -7,26 +8,21 @@ body {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', s
 .logo-sec {
 	min-width: 100px;
 }
-
 .logo-sec img {
 	width: 100%;
 }
-
 .container {
 	max-width: min(1290px ,96%);
 	margin: 0 auto;
 }
-
 .navigation {
 	display: none;
 }
-
 .nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
 .right-sec ul {
 	display: flex;
 	gap: 30px;
@@ -293,7 +289,7 @@ span.typed-cursor {
 }
 
 .big-project-section .owl-carousel .owl-nav button.owl-prev {
-	left: -29px;
+	left: -29PX;
 }
 
 .owl-nav button .owl-next span {
@@ -784,6 +780,7 @@ a:hover {
 		top: 0;
 		right: 0;
 		width: 50%;
+		border-radius: 50% 0 0 50%;
 		margin: 0;
 		font-size: 25px;
 		z-index: -100;
@@ -793,6 +790,11 @@ a:hover {
 		align-items: center;
 		gap: 20px 0;
 	}
+	.navigation li a::before,.navigation li a::after{content: '';width: 100%;height: 3px; background-color: #ffad30;position: absolute;left: 0;transform: scaleX(0);transition: transform .5s;}
+	.navigation li a::after{bottom: 0;transform-origin: right;}
+	.navigation li a::before{top: 0;transform-origin: left;}
+	.navigation li a:hover::after,
+	.navigation li a:hover::before{transform: scaleX(1);}
 }
 @media only screen and (max-width:736px){
 	
@@ -907,6 +909,7 @@ a:hover {
 	#menu {
 		display: block;
 	}
+	.change{width: 100%;border-radius: 0;}
 }
 @media only screen and (max-width:375px){.footer-sec .footer-nav ul{gap: 15px;}
 .footer-nav ul li a {font-size: 18px;}}
