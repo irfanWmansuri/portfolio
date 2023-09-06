@@ -1,49 +1,49 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio</title>
-      <link rel="stylesheet" href="css/portfolio.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap" rel="stylesheet">
-   </head>
-   <body>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="css/portfolio.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <div id="wrapper">
       <div class="header-section">
          <div class="container">
             <div class="nav">
                <div class="logo-sec">
-                  <a href="#"><img src="image/logo.png" alt=""></a>
+                  <a href="#"><img src="image/logo.png" alt="logo"></a>
                </div>
                <div class="rightsec">
                   <div class="topnav">
-                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                     <ul class="navbar_list">
+                        <li><a class="navbar_links" href="#">Home</a></li>
+                        <li><a class="navbar_links" href="#">Experience</a></li>
+                        <li><a class="navbar_links" href="#">About Us</a></li>
+                        <li><a class="navbar_links" href="#">Projects</a></li>
+                        <li><a class="navbar_links" href="#">Contact Us</a></li>
                      </ul>
-                     <a href="#" class="contact"> +91-9834059882</a>
+                     <div class="contactbtn">
+                        <i class="fa-solid fa-phone" id="phoneicon"></i>
+                        <a href="#" class="contact"> +91-9834059882</a>
+                     </div>
                   </div>
                </div>
-               <div class="mobilemenu">
-                  <div id="menu" onclick="onClickMenu()">
-                     <div id="bar1" class="bar"></div>
-                     <div id="bar2" class="bar"></div>
-                     <div id="bar3" class="bar"></div>
-                  </div>
-                  <ul class="navigation" id="navigation">
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Experience</a></li>
-                     <li><a href="#">About Us</a></li>
-                     <li><a href="#">Projects</a></li>
-                     <li><a href="mailto:irfanmasuri78629@gmail.com">Contact Us</a></li>
-                  </ul>
+               <div class="mobile_navbar_btn">
+                  <ion-icon name="menu-outline" class="mobile_nav_icon"></ion-icon>
+                  <ion-icon name="close-outline" class="mobile_nav_icon"></ion-icon>
                </div>
             </div>
          </div>
@@ -55,7 +55,7 @@
                <h3 id="typed" class="typed"></h3>
                <div class="banner-btn">
                   <a href="#" class="bannerbtn1"> Hire Me</a>
-                  <a href="#" class="bannerbtn2">Resume</a>
+                  <a href="https://mail.google.com/mail/u/0?ui=2&ik=e03ccaee03&attid=0.2&permmsgid=msg-f:1769676241975717195&th=188f272a7a692d4b&view=att&disp=inline&realattid=f_ljbdwv2g0" target="_blank" class="bannerbtn2">Resume</a>
                </div>
             </div>
             <div class="banner-image">
@@ -67,10 +67,10 @@
          <div class="container">
             <div class="content-box">
                <h2>I'm Irfan Mansuri, a Frontend Developer, <span> fresher in experience Design and & Developement love
-                  fun UI Developer </span> ,collaboration and making helpful products that connect with people.</h2>
+                     fun UI Developer </span> ,collaboration and making helpful products that connect with people.</h2>
                <div class="mailbox">
                   <span>
-                  <a href="mailto:irfanmasuri78629@gmail.com">Contact Me</a>
+                     <a href="mailto:irfanmasuri78629@gmail.com">Contact Me</a>
                   </span>
                </div>
             </div>
@@ -84,21 +84,24 @@
                <div class="item">
                   <div class="project-box">
                      <div class="image-box">
-                        <a href="" target="_blank"><img src="image/intensify.jpg" width="410" height="280" alt="intensify.png"></a>
+                        <a href="" target="_blank"><img src="image/intensify.jpg" width="410" height="280"
+                              alt="intensify.png"></a>
                      </div>
                   </div>
                </div>
                <div class="item">
                   <div class="project-box">
                      <div class="image-box">
-                        <a href="https://irfanwmansuri.github.io/ithost/" target="_blank"><img src="image/IThost.jpg" width="410" height="280" alt="IThost.jpg"></a>
+                        <a href="https://irfanwmansuri.github.io/ithost/" target="_blank"><img src="image/IThost.jpg"
+                              width="410" height="280" alt="IThost.jpg"></a>
                      </div>
                   </div>
                </div>
                <div class="item">
                   <div class="project-box">
                      <div class="image-box">
-                       <a href=" https://irfanwmansuri.github.io/cloth/"><img src="image/cloth.jpg" width="370" height="280" alt="cloth.png"></a>
+                        <a href=" https://irfanwmansuri.github.io/cloth/"><img src="image/cloth.jpg" width="370"
+                              height="280" alt="cloth.png"></a>
                      </div>
                   </div>
                </div>
@@ -112,7 +115,7 @@
                <div class="item">
                   <div class="project-box">
                      <div class="image-box">
-                        <img src="image/heilo.jpg" width="410" height="280" alt="heilo.png" >
+                        <img src="image/heilo.jpg" width="410" height="280" alt="heilo.png">
                      </div>
                   </div>
                </div>
@@ -128,23 +131,23 @@
                   work easier.</p>
                <div class="icon-box">
                   <div class="htmlimg">
-                     <img src="image/htmlicon.png" alt="htmlicon">
+                     <img src="image/htmlicon.png" width="50" height="50" alt="htmlicon">
                   </div>
                   <div class="cssimg">
-                     <img src="image/cssicon.png" alt="cssicon">
+                     <img src="image/cssicon.png" width="50" height="50" alt="cssicon">
                   </div>
                   <div class="javascriptimg">
-                     <img src="image/javascripticon.png" alt="javascripticon">
+                     <img src="image/javascripticon.png" width="50" height="50" alt="javascripticon">
                   </div>
                   <div class="photoshopimg">
-                     <img src="image/photoshopicon.png" alt="photoshopicon">
+                     <img src="image/photoshopicon.png" width="50" height="50" alt="photoshopicon">
                   </div>
                   <div class="bootstrapimg">
-                     <img src="image/bootstrapicon.png" alt="bootstrapicon">
+                     <img src="image/bootstrapicon.png" width="50" height="50" alt="bootstrapicon">
                   </div>
                </div>
                <div class="banner-btn">
-                  <a href="#" class="bannerbtn2">Download Resume</a>
+                  <a href="https://mail.google.com/mail/u/0?ui=2&ik=e03ccaee03&attid=0.2&permmsgid=msg-f:1769676241975717195&th=188f272a7a692d4b&view=att&disp=inline&realattid=f_ljbdwv2g0" target="_blank" class="bannerbtn2">Download Resume</a>
                </div>
             </div>
          </div>
@@ -163,8 +166,8 @@
                </div>
                <div class="social-icon">
                   <ul>
-                     <li><a href="#" class="link"></a></li>
-                     <li><a href="#" class="git"></a></li>
+                     <li><a href="https://www.linkedin.com/in/irfan-mansoori-351b89137/" target="_blank" class="link"></a></li>
+                     <li><a href="https://github.com/irfanWmansuri" target="_blank" class="git"></a></li>
                      <li><a href="#" class="insta"></a></li>
                   </ul>
                </div>
@@ -177,41 +180,53 @@
             <p>Concept, Design &amp; Hosting by irfanmansuri</p>
          </div>
       </div>
-      <script src="js/portfolio.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script>
-         $(document).ready(function () {
-             $("#typed").typed({
-                 strings: ["HTML", "Css", "Javascript", "Bootstrap", "Sass", "Jquery",],
-                 typeSpeed: 100,
-                 startDelay: 0,
-                 backSpeed: 50,
-                 backDelay: 2000,
-                 loop: true,
-                 cursorChar: "|",
-                 contentType: 'html',
-             });
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+   integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+   integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <script src="js/portfolio.js"></script>
+
+   <script>
+      $(document).ready(function () {
+         $("#typed").typed({
+            strings: ["HTML", "Css", "Javascript", "Bootstrap", "Sass", "Jquery",],
+            typeSpeed: 100,
+            startDelay: 0,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true,
+            cursorChar: "|",
+            contentType: 'html',
          });
-      </script>
-      <script>
-         $('.owl-carousel').owlCarousel({
-             loop: true,
-             margin: 30,
-             nav: true,
-             dots: false,
-             responsive: {
-                 0: {
-                     items: 1
-                 },
-                 600: {
-                     items: 2
-                 },
-                 1000: {
-                     items: 3
-                 }
-             }
-         })
-      </script>
-   </body>
+      });
+   </script>
+   <script>
+      $('.owl-carousel').owlCarousel({
+         loop: true,
+         margin: 30,
+         nav: true,
+         dots: false,
+         responsive: {
+            0: {
+               items: 1
+            },
+            600: {
+               items: 2
+            },
+            1000: {
+               items: 3
+            }
+         }
+      })
+   </script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
