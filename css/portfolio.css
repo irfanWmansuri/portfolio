@@ -2,8 +2,9 @@
 body,html {margin: 0; padding: 0; box-sizing: border-box; font: normal 18px 'Jost', sans-serif;
 	overflow-x: hidden;
 }
+:root{scroll-behavior: smooth;}
 
- .header-section { padding: 15px 0; background: #fff; position: sticky; top: 0; left: 0; right: 0; font-family: 'Saira', sans-serif;z-index: 10;
+ .header-section { padding: 15px 0; background: #fff; position: fixeds; top: 0; left: 0; right: 0; font-family: 'Saira', sans-serif;z-index: 10;
 }
 
 .logo-sec {
